@@ -1,0 +1,45 @@
+@use"../base" as *;
+@use"../utilities" as *;
+
+//////// Layout ////////
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/ai-generated-8262914_1280.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header-btn {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    height: 40px;
+    width: 55px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 3px;
+    @include color(neon-magneta, border-color);
+    @include color(neon-magneta-bs-inset, box-shadow);
+    background-color: transparent;
+
+    &:active {
+        box-shadow: none;
+    }
+}
+
+.header-svg {
+    width: 60%;
+    height: 80%;
+    @include color(tangerine-glow, fill); 
+}
+
+//////// FlexBox layout ////////
+
+.header-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

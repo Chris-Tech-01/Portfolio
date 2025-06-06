@@ -1,0 +1,83 @@
+//// Debug Testing ////
+
+// * {
+//   outline: 1px solid red; // Visualize every element's box
+// }
+
+// .middle {
+//   border: 2px solid blue;
+// }
+
+// .container {
+//   border: 2px solid green;
+// }
+
+// body, html {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// html, body {
+//   height: 100%;
+// }
+
+//// Global layout ////
+
+* {
+    box-sizing: border-box; // Changes how an element's width and height are calculated. When set to border-box, the specified width and height include the element's content, padding, and borders.
+}
+
+//// Layout ////
+
+body { 
+    font-size: 1rem;
+    letter-spacing: .4px;
+    margin: 0; // Sets the top, bottom, left, and right margins of an element to 0.
+}
+
+h1 {
+    margin: 0; // Sets the top, bottom, left, and right margins of an element to 0.
+}
+
+h3 {
+    margin: 0; // Sets the top, bottom, left, and right margins of an element to 0.
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+//////// Media Queries ////////
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    
+    // @media (min-width: 768px) {
+    //     width: 750px; // Sets an element's width.
+    // }
+
+    // @media (min-width: 992px) {
+    //     width: 970px; // Sets an element's width.
+    // }
+
+    // @media (min-width: 1260px) {
+    //     width: 1200px; // Sets an element's width.
+    // }
+}
+
+//////// Flexbox Layout ////////
+
+.page-position {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-content {
+    flex: 1;
+}

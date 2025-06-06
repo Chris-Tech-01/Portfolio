@@ -1,0 +1,29 @@
+@use "sass:map"; // Required for map.has-key() and map.get()
+
+//////// Sass Map ////////
+
+$colors: (
+    neon-magneta          : #FF00D4,
+    neon-magneta-bs       : 0 0 6px 6px rgba(255, 0, 255, 0.3),
+    neon-magneta-bs-inset : inset 0 0 6px 6px rgba(255, 0, 255, 0.3),
+    electric-blue         : #00F0FF,
+    deep-indigo           : #15002B,
+    cyber-purple          : #6E00FF,
+    hot-pink              : #FF2EB2,
+    tangerine-glow        : #FF6A00,
+    sky-lavender          : #C08DFF
+);
+
+//////// Mixins ////////
+
+@mixin color($name, $property: color) { // Mixin created called color. Sets a colour using a name and a property.
+                                        // - $name: The key name in the $colors map (e.g. neon-magneta)
+                                        // - $property: The CSS property to apply the color to (defaults to 'color')
+    $value: map.get($colors, $name); // Looks for the colour in the $colors map and stores it in the $value variable.
+
+    @if $value { // Checks if the colour was found in the map.
+        #{$property}: $value; // If found applies the colour to the CSS property. Property can always be defined different when @including.
+    } @else {
+        @warn "Color '#{$name}' not found in the $colors map."; // If not found then displays a warning message.
+    }
+}
