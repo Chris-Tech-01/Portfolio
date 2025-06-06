@@ -71,6 +71,10 @@ h3 {
   box-shadow: none;
 }
 
+.banner-content {
+  text-align: center;
+}
+
 .header-svg {
   width: 60%;
   height: 80%;
@@ -96,14 +100,18 @@ h3 {
   background-color: #15002B;
 }
 .sidebar-content ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
-}
-.sidebar-content li {
-  padding-top: 20px;
 }
 .sidebar-content a {
   color: #00F0FF;
   text-decoration: none;
+}
+.sidebar-content li, .sidebar-content .contact-me {
+  margin: 10px auto;
+  width: fit-content;
+  border-bottom: 2px solid transparent;
 }
 .sidebar-content li:hover, .sidebar-content .contact-me:hover {
   border-bottom: 2px solid;
@@ -116,18 +124,21 @@ h3 {
 }
 
 .my-initials-box {
+  width: 100%;
   text-align: center;
-  padding: 50px 89px;
+  padding: 0;
 }
 
 .sidebar-list-box {
+  width: 100%;
   text-align: center;
-  padding: 50px 89px;
+  padding: 0;
 }
 
 .contact-me-box {
+  width: 100%;
   text-align: center;
-  padding: 10px 89px;
+  padding: 0;
 }
 
 .sidebar {

@@ -17,11 +17,9 @@
     @include color(deep-indigo, background-color);
 
     ul {
+        margin: 0;
+        padding: 0;
         list-style-type: none;
-    }
-
-    li {
-        padding-top: 20px;
     }
 
     a {
@@ -30,6 +28,10 @@
     }
 
     li, .contact-me {
+        margin: 10px auto;
+        width: fit-content;
+        border-bottom: 2px solid transparent;
+
         &:hover {
             border-bottom: 2px solid;
             @include color(hot-pink);
@@ -43,18 +45,21 @@
 }
 
 .my-initials-box {
+    width: 100%;
     text-align: center;
-    padding: 50px 89px;
+    padding: 0;
 }
 
 .sidebar-list-box {
+    width: 100%;
     text-align: center;
-    padding: 50px 89px;
+    padding: 0;
 }
 
 .contact-me-box {
+    width: 100%;
     text-align: center;
-    padding: 10px 89px;
+    padding: 0;
 }
 
 //////// Box Styles ////////
