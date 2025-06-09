@@ -1,0 +1,28 @@
+@use"../base" as *;
+@use"../utilities" as *;
+
+//////// Layout ////////
+
+.project {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+
+    img {
+        max-width: 100%; // Don't grow beyond container <<<< It was spilling out because I had not set the max-width.
+        height: auto; // maintain aspect ratio
+    }
+
+    .mid-h2 {
+        margin: 20px 0;
+    }
+}
+
+
+
+//////// FlexBox Layout ////////
+
+.project {
+    display: flex;
+    flex-direction: column;
+}

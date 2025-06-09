@@ -1,0 +1,111 @@
+@use"../base" as *;
+@use"../utilities" as *;
+
+//////// Layout ////////
+ 
+.contact-info-bg {
+    @include color(deep-indigo, background-color); 
+}
+
+.written-information {
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        @include color(electric-blue);
+    }
+}
+ 
+.search-bar-container {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    // @include color(tangerine-glow, background-color);
+}
+
+.search-bar {
+    display: block;
+    height: auto;
+    width: 100%;
+    @include color(electric-blue);
+    @include color(cyber-purple, background-color);
+    @include color(neon-magneta-bs, box-shadow);
+
+    &:focus {
+        outline: none;
+        box-shadow: none;       
+    }
+}
+
+.search-bar::placeholder {
+    @include color(electric-blue);
+}
+
+.search-bar:focus::placeholder {
+    color: transparent;
+}
+
+.text-area-container {
+    margin: 20px 0;
+}
+
+.text-area {
+    font: inherit;
+    font-size: 1rem;
+    display: block;
+    height: 80px;
+    width: 100%;
+    @include color(electric-blue);
+    @include color(cyber-purple, background-color);
+    @include color(neon-magneta-bs, box-shadow);
+
+    &:focus {
+        outline: none;
+        box-shadow: none;       
+    }
+}
+
+.text-area::placeholder {
+    @include color(electric-blue);
+}
+
+.text-area:focus::placeholder {
+    color: transparent;
+}
+
+//////// Footer ////////
+
+.back-to-top {
+    font-size: 1.4rem;
+    padding: 20px 0;
+    text-align: center;
+    @include color(deep-indigo, background-color);
+
+    a {
+        text-decoration: none;
+        @include color(electric-blue);
+
+        &:hover {
+           text-decoration: underline;
+           @include color(tangerine-glow); 
+        }
+    }
+}
+
+//////// Box Styles ////////
+
+.search-bar {
+    border: 6px solid;
+    border-style: double;
+    @include color(neon-magneta, border-color);
+}
+
+.text-area {
+    border: 6px solid;
+    border-style: double;
+    @include color(neon-magneta, border-color);
+}
+
+//////// FlexBox Layout ////////
+
+

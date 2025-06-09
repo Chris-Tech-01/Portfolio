@@ -3,10 +3,16 @@
 
 //////// Layout ////////
 
-.banner {
+header {
     height: 100vh;
     width: 100%;
-    background-image: url(../images/ai-generated-8262914_1280.png);
+}
+
+.banner {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/ChatGpt-Image-2.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,7 +37,31 @@
 }
 
 .banner-content {
+    position: relative;
+    top: 220px;
     text-align: center;
+    @include color(electric-blue);
+
+    h1 {
+        font-size: 2.4rem;
+        text-align: center;
+        // @include color(neon-magneta-bs-inset, box-shadow)
+
+        &:hover {
+            cursor: default;
+            @include color(cyber-purple);
+        }
+    }
+
+    p {
+        font-size: 1.8rem;
+        // @include color(neon-magneta-bs-inset, box-shadow)
+
+        &:hover {
+            cursor: default;
+            @include color(cyber-purple);
+        }
+    }
 }
 
 .header-svg {
@@ -42,8 +72,17 @@
 
 //////// FlexBox layout ////////
 
+header {
+    display: flex;
+    flex: 1;
+}
+
 .header-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include mq(s) {
+        display: none;
+    }
 }

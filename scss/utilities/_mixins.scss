@@ -14,16 +14,34 @@ $colors: (
     sky-lavender          : #C08DFF
 );
 
+$breakpoints: (
+    s  : 576px,
+    m  : 768px,
+    l  : 992px,
+    xl : 1200px
+);
+
 //////// Mixins ////////
 
-@mixin color($name, $property: color) { // Mixin created called color. Sets a colour using a name and a property.
-                                        // - $name: The key name in the $colors map (e.g. neon-magneta)
-                                        // - $property: The CSS property to apply the color to (defaults to 'color')
-    $value: map.get($colors, $name); // Looks for the colour in the $colors map and stores it in the $value variable.
-
-    @if $value { // Checks if the colour was found in the map.
-        #{$property}: $value; // If found applies the colour to the CSS property. Property can always be defined different when @including.
+@mixin color($name, $property: color) {  // Mixin created called color. Sets a colour using a predefined name from the map and a property.
+                                         // - $name: The key name in the $colors map (e.g. neon-magneta).
+                                         // - $property: The CSS property to apply the color to (defaults to 'color').
+    @if map.has-key($colors, $name) {    // Checks if the $colors map contains the key provided in $name (e.g @include color(sky-lavender)).
+        $value: map.get($colors, $name); // If found, retrieves the color value from the map using the key, then stores the result in the $value variable.
+        #{$property}: $value;            // Outputs the CSS declaration using the selected property and the color value.
     } @else {
         @warn "Color '#{$name}' not found in the $colors map."; // If not found then displays a warning message.
+    }
+}
+
+@mixin mq($value) {                           // Mixin created called mq, sets a breakpoint using a predefined name from the map. 
+                                              // - $value: The key name in the $breakpoints map. (e.g. s)
+    @if map.has-key($breakpoints, $value) {   // Checks if the $breakpoints map contains the key provided in $value.
+        $size: map.get($breakpoints, $value);  // If found, retrieves the size value from the map using the key, then stores it in the $size variable.
+        @media (min-width: $size) {           // Creates a media query using the retrieved size.
+            @content;                         // Injects whatever CSS is placed inside the @include.
+        }
+    } @else { 
+        @error "unknown breakpoint '#{$breakpoints}'"; // If not found then displays a warning message.
     }
 }
