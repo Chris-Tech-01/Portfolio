@@ -1,0 +1,53 @@
+@use"../base" as *;
+@use"../utilities" as *;
+
+//////// Layout ////////
+
+.about-me-container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 20px 25px;
+}
+
+.about-me {
+    width: 100%;
+    height: 100vh;
+    @include color(deep-indigo, background-color);
+    
+}
+
+.about-me-content {
+    max-width: 600px;
+    margin: 120px 0;
+    padding: 10px 10px;
+    border: 2px solid;
+    text-align: center;
+    @include color(neon-magneta, border-color);
+    @include color(neon-magneta-bs, box-shadow);
+
+    h1 {
+        width: fit-content;
+        border-bottom: 2px solid;
+        @include color(electric-blue);
+        @include color(tangerine-glow, border-color);
+    }
+
+    p {
+        margin: 20px 0;
+        @include color(electric-blue);
+    }
+}
+
+//////// FlexBox Layout ////////
+
+.about-me-container {
+    display: flex;
+    justify-content: center;
+}
+
+.about-me-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

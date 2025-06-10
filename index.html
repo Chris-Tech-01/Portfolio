@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <meta name="ROBOTS" content="NOINDEX,NOFOLLOW">
+        <meta charset="utf-8"> <!-- Sets the character encoding to UTF-8, which supports most characters from all languages -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Ensures the page uses the latest rendering engine in Internet Explorer -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> <!-- Sets the page width to match the device screen width -->
+        <meta name="ROBOTS" content="NOINDEX,NOFOLLOW"> <!-- Tells search engines not to index this page or follow links on it. -->
         
         <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- These speed up the loading time for fonts by setting up the server connection in advance. -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- These speed up the loading time for fonts by setting up the server connection in advance. -->
@@ -13,7 +13,7 @@
         <link rel="stylesheet" href="css/style.css"> <!-- Links to my stylesheet -->
         <script src="https://kit.fontawesome.com/b711cced4c.js" crossorigin="anonymous"></script> <!-- Links my fonts from fontawesome -->
         
-        <title>
+        <title> <!-- Names the title in the tab -->
             My Portfolio
         </title>
     </head>
@@ -27,15 +27,15 @@
                     </div>
                     <div class="sidebar-list-box">
                         <ul>
-                            <li><a href="#">About me</a></li>                          
-                            <li><a href="#">My Portfolio</a></li>                           
-                            <li><a href="#">Coding Examples</a></li>                            
-                            <li><a href="#">SCS Scheme</a></li>                           
+                            <li><a href="aboutme.html">About me</a></li>                          
+                            <li><a href="#portfolio">My Portfolio</a></li>                           
+                            <li><a href="codingexamples.html">Coding Examples</a></li>                            
+                            <li><a href="SCSscheme.html">SCS Scheme</a></li>                           
                         </ul>
                     </div>
                     <div class="contact-me-box">
-                        <a href="#">
-                            <div class="contact-me">Contact Me</div>
+                        <a href="#contact-me">
+                            <div class="contact-me-sb">Contact Me</div>
                         </a>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                         </div>
                     </div>
                 </header>
-                <div class="container">
+                <div class="container middle-bg" id="portfolio">
                     <div class="middle">
                         <div class="mid-row">                       
                             <div class="project project-1">
@@ -93,12 +93,17 @@
                     </div>
                 </div>
                 <div class="container contact-info-bg">
-                    <div class="contact-info column">
+                    <div class="contact-info column" id="contact-me">
                         <div class="written-information">
                             <h3 class="get-in-touch">Get In Touch</h3>
-                            <P></P>
-                            <P></P>
-                            <P></P>
+                            <P>
+                                Interested in working together, have a project in mind, or simply want to ask a question? Feel free to get in touch, I&apos;d love to hear from you.
+                            </P>
+                            <P>
+                                00000 000 000
+                                <br>
+                                ChrisFoleyTech@hotmail.com
+                            </P>
                         </div>
                         <form class="search-bar-container">
                             <input class="search-bar" placeholder="First Name...." type="text">

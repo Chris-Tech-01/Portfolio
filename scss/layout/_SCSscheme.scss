@@ -1,0 +1,64 @@
+@use"../base" as *;
+@use"../utilities" as *;
+
+//////// Layout ////////
+
+.SCS {
+    width: 100%;
+    height: 100vh;
+    @include color(deep-indigo, background-color);
+    
+}
+
+.SCS-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 20px 15px;
+}
+
+.SCS-content {
+    height: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+    padding: 10px 10px;
+    border: 2px solid;
+    text-align: center;
+    @include color(neon-magneta, border-color);
+    @include color(neon-magneta-bs, box-shadow);
+
+    h1 {
+        font-size: 1.5rem;
+        border-bottom: 2px solid;
+        @include color(electric-blue);
+        @include color(tangerine-glow, border-color);
+    }
+
+    p {
+        margin: 20px 0;
+        @include color(electric-blue);
+    }
+
+    ul {
+        @include color(electric-blue);
+    }
+}
+
+//////// FlexBox Layout ////////
+
+.SCS-container {
+    display: flex;
+    justify-content: center;
+}
+
+.SCS-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

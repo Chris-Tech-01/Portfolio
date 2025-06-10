@@ -10,7 +10,7 @@
     height: 100vh;
     @include color(cyber-purple, background-color);
     
-    @include mq(s) {
+    @include mq(m) {
         display: block;
     }
 }
@@ -36,7 +36,7 @@
         }
     }
 
-    li, .contact-me {
+    li, .contact-me-sb {
         margin: 10px auto;
         width: fit-content;
         border-bottom: 2px solid transparent;

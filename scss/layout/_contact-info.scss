@@ -4,6 +4,8 @@
 //////// Layout ////////
  
 .contact-info-bg {
+    border-top: 3px solid;
+    @include color(tangerine-glow, border-color);
     @include color(deep-indigo, background-color); 
 }
 
@@ -12,6 +14,13 @@
     h3 {
         font-size: 2rem;
         text-align: center;
+        cursor: default;
+        @include color(electric-blue);
+    }
+
+    p {
+        text-align: center;
+        font-size: .9rem;
         @include color(electric-blue);
     }
 }
@@ -20,7 +29,6 @@
     width: 100%;
     height: auto;
     margin: 20px 0;
-    // @include color(tangerine-glow, background-color);
 }
 
 .search-bar {
@@ -46,6 +54,7 @@
 }
 
 .text-area-container {
+    width: 100%;
     margin: 20px 0;
 }
 
@@ -79,6 +88,8 @@
     font-size: 1.4rem;
     padding: 20px 0;
     text-align: center;
+    border-top: 3px solid;
+    @include color(tangerine-glow, border-color);
     @include color(deep-indigo, background-color);
 
     a {
@@ -87,7 +98,7 @@
 
         &:hover {
            text-decoration: underline;
-           @include color(tangerine-glow); 
+           @include color(cyber-purple); 
         }
     }
 }
