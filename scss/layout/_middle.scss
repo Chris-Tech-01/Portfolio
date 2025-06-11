@@ -13,12 +13,12 @@
 .project {
     width: 300px;
     height: auto;
-    margin: 40px 0;
+    margin: 40px 10px;
 
     img {
-        border: 4px solid;
         max-width: 100%; // Don't grow beyond container <<<< It was spilling out because I had not set the max-width.
         height: auto; // maintain aspect ratio
+        border: 4px solid;
         @include color(neon-magneta, border-color);
     }
 
@@ -53,9 +53,17 @@
 //////// FlexBox Layout ////////
 
 .middle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+
+    @include mq(l) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include mq(xl) {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .project {

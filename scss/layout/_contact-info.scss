@@ -10,6 +10,7 @@
 }
 
 .written-information {
+    max-width: 300px;
 
     h3 {
         font-size: 2rem;
@@ -24,17 +25,22 @@
         @include color(electric-blue);
     }
 }
+
+.contact-row {
+    width: 100%;
+    height: auto;
+}
  
 .search-bar-container {
     width: 100%;
     height: auto;
-    margin: 20px 0;
+    padding: 0 5px;
 }
 
 .search-bar {
-    display: block;
     height: auto;
     width: 100%;
+    margin: 10px 0;
     @include color(electric-blue);
     @include color(cyber-purple, background-color);
     @include color(neon-magneta-bs, box-shadow);
@@ -119,4 +125,15 @@
 
 //////// FlexBox Layout ////////
 
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
+.contact-row {
+    @include mq(m) {
+        display: flex;
+        flex-direction: row;
+    }
+}
