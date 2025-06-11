@@ -6,6 +6,7 @@
 .about-me-container {
     width: 100%;
     max-width: 100%;
+    height: auto;
     margin: 0;
     padding: 20px 25px;
 }
@@ -19,7 +20,7 @@
 
 .about-me-content {
     max-width: 600px;
-    margin: 120px 0;
+    margin-top: 80px;
     padding: 10px 10px;
     border: 2px solid;
     text-align: center;

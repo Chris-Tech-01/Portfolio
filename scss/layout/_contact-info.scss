@@ -11,6 +11,7 @@
 
 .written-information {
     max-width: 300px;
+    margin: 0 40px;
 
     h3 {
         font-size: 2rem;
@@ -24,6 +25,10 @@
         font-size: .9rem;
         @include color(electric-blue);
     }
+}
+
+.contact-box {
+    width: 100%;
 }
 
 .contact-row {
@@ -46,12 +51,12 @@
     @include color(neon-magneta-bs, box-shadow);
 
     &:focus {
-        outline: none;
-        box-shadow: none;       
+        outline: none;     
     }
 }
 
 .search-bar::placeholder {
+    font-family: "orbitron", sans-serif;
     @include color(electric-blue);
 }
 
@@ -76,12 +81,12 @@
     @include color(neon-magneta-bs, box-shadow);
 
     &:focus {
-        outline: none;
-        box-shadow: none;       
+        outline: none;     
     }
 }
 
 .text-area::placeholder {
+    font-family: "orbitron", sans-serif;
     @include color(electric-blue);
 }
 
@@ -90,6 +95,7 @@
 }
 
 .contact-button {
+    width: 80px;
     border: 2px solid;
     border-radius: 3px;
     background-color: transparent;
@@ -140,6 +146,16 @@
 //////// FlexBox Layout ////////
 
 .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include mq(l) {
+        flex-direction: row;
+    }
+}
+
+.contact-box {
     display: flex;
     flex-direction: column;
     align-items: center;

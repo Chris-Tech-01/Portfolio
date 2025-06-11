@@ -3,6 +3,7 @@
 }
 
 body {
+  font-family: "orbitron", sans-serif;
   font-size: 1rem;
   letter-spacing: 0.5px;
   margin: 0;
@@ -42,8 +43,9 @@ h3 {
   flex: 1;
 }
 
-.poppins-regular {
-  font-family: "Poppins", sans-serif;
+.orbitron {
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
@@ -297,6 +299,7 @@ header {
 
 .written-information {
   max-width: 300px;
+  margin: 0 40px;
 }
 .written-information h3 {
   font-size: 2rem;
@@ -308,6 +311,10 @@ header {
   text-align: center;
   font-size: 0.9rem;
   color: #00F0FF;
+}
+
+.contact-box {
+  width: 100%;
 }
 
 .contact-row {
@@ -331,10 +338,10 @@ header {
 }
 .search-bar:focus {
   outline: none;
-  box-shadow: none;
 }
 
 .search-bar::placeholder {
+  font-family: "orbitron", sans-serif;
   color: #00F0FF;
 }
 
@@ -360,10 +367,10 @@ header {
 }
 .text-area:focus {
   outline: none;
-  box-shadow: none;
 }
 
 .text-area::placeholder {
+  font-family: "orbitron", sans-serif;
   color: #00F0FF;
 }
 
@@ -372,6 +379,7 @@ header {
 }
 
 .contact-button {
+  width: 80px;
   border: 2px solid;
   border-radius: 3px;
   background-color: transparent;
@@ -417,6 +425,17 @@ header {
   flex-direction: column;
   align-items: center;
 }
+@media (min-width: 992px) {
+  .contact-info {
+    flex-direction: row;
+  }
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 @media (min-width: 768px) {
   .contact-row {
@@ -428,6 +447,7 @@ header {
 .about-me-container {
   width: 100%;
   max-width: 100%;
+  height: auto;
   margin: 0;
   padding: 20px 25px;
 }
@@ -440,7 +460,7 @@ header {
 
 .about-me-content {
   max-width: 600px;
-  margin: 120px 0;
+  margin-top: 80px;
   padding: 10px 10px;
   border: 2px solid;
   text-align: center;
@@ -493,16 +513,18 @@ header {
   box-shadow: 0 0 6px 6px rgba(255, 0, 255, 0.3);
 }
 .SCS-content h1 {
-  font-size: 1.5rem;
+  font-size: 1rem;
   border-bottom: 2px solid;
   color: #00F0FF;
   border-color: #FF6A00;
 }
 .SCS-content p {
+  font-size: 0.7rem;
   margin: 20px 0;
   color: #00F0FF;
 }
 .SCS-content ul {
+  font-size: 0.7rem;
   color: #00F0FF;
 }
 
