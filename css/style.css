@@ -468,12 +468,19 @@ header {
   box-shadow: 0 0 6px 6px rgba(255, 0, 255, 0.3);
 }
 .about-me-content h1 {
+  font-size: 1.5rem;
   width: fit-content;
   border-bottom: 2px solid;
   color: #00F0FF;
   border-color: #FF6A00;
 }
+@media (min-width: 992px) {
+  .about-me-content h1 {
+    font-size: 2rem;
+  }
+}
 .about-me-content p {
+  font-size: 1.2rem;
   margin: 20px 0;
   color: #00F0FF;
 }
@@ -512,20 +519,40 @@ header {
   border-color: #FF00D4;
   box-shadow: 0 0 6px 6px rgba(255, 0, 255, 0.3);
 }
+@media (min-width: 992px) {
+  .SCS-content {
+    max-width: 800px;
+  }
+}
 .SCS-content h1 {
   font-size: 1rem;
   border-bottom: 2px solid;
   color: #00F0FF;
   border-color: #FF6A00;
 }
+@media (min-width: 992px) {
+  .SCS-content h1 {
+    font-size: 1.5rem;
+  }
+}
 .SCS-content p {
   font-size: 0.7rem;
   margin: 20px 0;
   color: #00F0FF;
 }
+@media (min-width: 992px) {
+  .SCS-content p {
+    font-size: 1rem;
+  }
+}
 .SCS-content ul {
-  font-size: 0.7rem;
+  font-size: 0.9rem;
   color: #00F0FF;
+}
+@media (min-width: 992px) {
+  .SCS-content ul {
+    font-size: 0.9rem;
+  }
 }
 
 .SCS-container {

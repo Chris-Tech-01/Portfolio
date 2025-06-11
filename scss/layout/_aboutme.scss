@@ -28,13 +28,19 @@
     @include color(neon-magneta-bs, box-shadow);
 
     h1 {
+        font-size: 1.5rem;
         width: fit-content;
         border-bottom: 2px solid;
         @include color(electric-blue);
         @include color(tangerine-glow, border-color);
+
+        @include mq(l){
+            font-size: 2rem;
+        }
     }
 
     p {
+        font-size: 1.2rem;
         margin: 20px 0;
         @include color(electric-blue);
     }
