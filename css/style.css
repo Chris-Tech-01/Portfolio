@@ -318,7 +318,7 @@ header {
 .search-bar-container {
   width: 100%;
   height: auto;
-  padding: 0 5px;
+  padding: 0 10px;
 }
 
 .search-bar {
@@ -345,6 +345,7 @@ header {
 .text-area-container {
   width: 100%;
   margin: 20px 0;
+  padding: 0 10px;
 }
 
 .text-area {
@@ -368,6 +369,18 @@ header {
 
 .text-area:focus::placeholder {
   color: transparent;
+}
+
+.contact-button {
+  border: 2px solid;
+  border-radius: 3px;
+  background-color: transparent;
+  color: #00F0FF;
+  border-color: #FF00D4;
+  box-shadow: inset 0 0 6px 6px rgba(255, 0, 255, 0.3);
+}
+.contact-button:active {
+  box-shadow: none;
 }
 
 .back-to-top {
