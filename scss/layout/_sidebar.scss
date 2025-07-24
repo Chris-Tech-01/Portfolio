@@ -3,16 +3,28 @@
 
 //////// Layout ////////
 
-.sidebar {
-    display: none;
-    position: sticky;
+#sidebar {
+    position: fixed;
     top: 0;
+    bottom: 0;
     height: 100vh;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease-in-out;
+    z-index: 4;
     @include color(cyber-purple, background-color);
-    
+
     @include mq(m) {
         display: block;
+        transform: translateX(0);
     }
+}
+
+#sidebar.show {
+  transform: translateX(0);
+}
+
+.hidden {
+    display: none;
 }
 
 .sidebar-content {
@@ -84,7 +96,7 @@
 
 //////// Box Styles ////////
 
-.sidebar {
+#sidebar {
     border: 6px solid;
     border-style: double;
     @include color(neon-magneta, border-color);
