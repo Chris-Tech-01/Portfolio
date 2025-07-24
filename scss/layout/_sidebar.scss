@@ -14,6 +14,7 @@
     @include color(cyber-purple, background-color);
 
     @include mq(m) {
+        position: sticky;
         display: block;
         transform: translateX(0);
     }

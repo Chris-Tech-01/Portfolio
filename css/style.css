@@ -56,7 +56,6 @@ header {
 }
 
 .banner {
-  position: relative;
   height: 100vh;
   width: 100%;
   background-image: url(../images/CyberCity.png);
@@ -138,6 +137,7 @@ header {
 }
 @media (min-width: 768px) {
   #sidebar {
+    position: sticky;
     display: block;
     transform: translateX(0);
   }
