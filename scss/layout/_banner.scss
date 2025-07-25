@@ -23,9 +23,10 @@ header {
     right: .4rem;
     height: 40px;
     width: 55px;
-    cursor: pointer;
     border: 2px solid;
     border-radius: 3px;
+    align-items: center;
+    cursor: pointer;
     @include color(neon-magneta, border-color);
     @include color(neon-magneta-bs-inset, box-shadow);
     background-color: transparent;
@@ -33,6 +34,30 @@ header {
     &:active {
         box-shadow: none;
     }
+}
+
+.header-btn.active {
+    
+    .burger-line-1 {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .burger-line-2 {
+        opacity: 0;
+    }
+
+    .burger-line-3 {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+}
+
+.burger-menu {
+    width: 80%;
+    height: 2px;
+    margin: 2.5px 0;
+    transition: all 0.4s ease;
+    transform-origin: center;
+    @include color(tangerine-glow, background-color); 
 }
 
 .banner-content {
@@ -63,12 +88,6 @@ header {
     }
 }
 
-.header-svg {
-    width: 60%;
-    height: 80%;
-    @include color(tangerine-glow, fill); 
-}
-
 //////// FlexBox layout ////////
 
 header {
@@ -78,6 +97,7 @@ header {
 
 .header-btn {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 

@@ -1,4 +1,10 @@
 export { 
     getRandomNumber, 
-    toggleSidebar 
+    toggleSidebar
 } from './sidebar.js';
+
+export { 
+    toggleBurgerMenu
+} from './banner.js';
+
+

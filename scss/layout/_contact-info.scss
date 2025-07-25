@@ -99,6 +99,7 @@
     border: 2px solid;
     border-radius: 3px;
     background-color: transparent;
+    cursor: pointer;
     @include color(electric-blue);
     @include color(neon-magneta, border-color);
     @include color(neon-magneta-bs-inset, box-shadow);

@@ -1,6 +1,7 @@
 import { 
     getRandomNumber, 
-    toggleSidebar
+    toggleSidebar,
+    toggleBurgerMenu
 } from './index.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,4 +14,6 @@ document.addEventListener('DOMContentLoaded', () => {
   if (toggleBtn) {
     toggleBtn.addEventListener('click', toggleSidebar);
   }
+
+  toggleBurgerMenu();
 });

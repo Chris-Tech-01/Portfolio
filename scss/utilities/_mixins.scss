@@ -42,6 +42,6 @@ $breakpoints: (
             @content;                         // Injects whatever CSS is placed inside the @include.
         }
     } @else { 
-        @error "unknown breakpoint '#{$breakpoints}'"; // If not found then displays a warning message.
+        @warn "unknown breakpoint '#{$breakpoints}'"; // If not found then displays a warning message.
     }
 }

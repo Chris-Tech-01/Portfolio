@@ -70,15 +70,35 @@ header {
   right: 0.4rem;
   height: 40px;
   width: 55px;
-  cursor: pointer;
   border: 2px solid;
   border-radius: 3px;
+  align-items: center;
+  cursor: pointer;
   border-color: #FF00D4;
   box-shadow: inset 0 0 6px 6px rgba(255, 0, 255, 0.3);
   background-color: transparent;
 }
 .header-btn:active {
   box-shadow: none;
+}
+
+.header-btn.active .burger-line-1 {
+  transform: translateY(7px) rotate(45deg);
+}
+.header-btn.active .burger-line-2 {
+  opacity: 0;
+}
+.header-btn.active .burger-line-3 {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+.burger-menu {
+  width: 80%;
+  height: 2px;
+  margin: 2.5px 0;
+  transition: all 0.4s ease;
+  transform-origin: center;
+  background-color: #FF6A00;
 }
 
 .banner-content {
@@ -103,12 +123,6 @@ header {
   color: #6E00FF;
 }
 
-.header-svg {
-  width: 60%;
-  height: 80%;
-  fill: #FF6A00;
-}
-
 header {
   display: flex;
   flex: 1;
@@ -116,6 +130,7 @@ header {
 
 .header-btn {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -395,6 +410,7 @@ header {
   border: 2px solid;
   border-radius: 3px;
   background-color: transparent;
+  cursor: pointer;
   color: #00F0FF;
   border-color: #FF00D4;
   box-shadow: inset 0 0 6px 6px rgba(255, 0, 255, 0.3);
