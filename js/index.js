@@ -7,4 +7,8 @@ export {
     toggleBurgerMenu
 } from './banner.js';
 
+export { 
+    validateContactForm
+} from './formValidation.js';
+
 

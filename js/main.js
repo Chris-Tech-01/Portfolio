@@ -1,7 +1,8 @@
 import { 
     getRandomNumber, 
     toggleSidebar,
-    toggleBurgerMenu
+    toggleBurgerMenu,
+    validateContactForm
 } from './index.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -16,4 +17,22 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   toggleBurgerMenu();
+
+  const form = document.querySelector('.contact-box');
+  
+  if (form) {
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+
+      const { isValid, errors } = validateContactForm(form);
+
+        if (!isValid) {
+          alert(errors.join('\n'));
+        } else {
+          alert('Form submitted successfully!');
+          form.reset();
+        }
+    });
+  }
 });

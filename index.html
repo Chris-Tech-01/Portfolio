@@ -101,28 +101,28 @@
                                 ChrisFoleyTech@hotmail.com
                             </P>
                         </div>
-                        <div class="contact-box">
+                        <form class="contact-box">
                             <div class="contact-row">
-                                <form class="search-bar-container">
-                                    <input class="search-bar" placeholder="First Name...." type="text">
-                                </form>
-                                <form class="search-bar-container">
-                                    <input class="search-bar" placeholder="Last Name...." type="text">
-                                </form>
+                                <div class="search-bar-container">
+                                    <input class="search-bar" name="firstName" placeholder="First Name...." type="text" minlength="2" required>
+                                </div>
+                                <div class="search-bar-container">
+                                    <input class="search-bar" name="lastName" placeholder="Last Name...." type="text" minlength="2" required>
+                                </div>
                             </div>
                             <div class="contact-row">
-                                <form class="search-bar-container">
-                                    <input class="search-bar" placeholder="Email Address...." type="text">
-                                </form>
-                                <form class="search-bar-container">
-                                    <input class="search-bar" placeholder="Subject...." type="text">
-                                </form>
+                                <div class="search-bar-container">
+                                    <input class="search-bar" name="email" placeholder="Email Address...." type="email" required>
+                                </div>
+                                <div class="search-bar-container">
+                                    <input class="search-bar" name="subject" placeholder="Subject...." type="text" minlength="3" required>
+                                </div>
                             </div>
-                            <form class="text-area-container">
-                                <textarea class="text-area" placeholder="Message...."></textarea>
-                            </form>
+                            <div class="text-area-container">
+                                <textarea class="text-area" name="textArea" placeholder="Message...." minlength="1" maxlength="1000" required></textarea>
+                            </div>
                             <button class="contact-button" type="submit">Submit</button>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <footer>
