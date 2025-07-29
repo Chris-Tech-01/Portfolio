@@ -2,7 +2,8 @@ import {
     getRandomNumber, 
     toggleSidebar,
     toggleBurgerMenu,
-    validateContactForm
+    validateContactForm,
+    bannerTyping
 } from './index.js';
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   toggleBurgerMenu();
+  bannerTyping();
 
   const form = document.querySelector('.contact-box');
   

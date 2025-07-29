@@ -4,7 +4,8 @@ export {
 } from './sidebar.js';
 
 export { 
-    toggleBurgerMenu
+    toggleBurgerMenu,
+    bannerTyping
 } from './banner.js';
 
 export { 
