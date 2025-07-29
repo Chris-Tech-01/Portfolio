@@ -49,8 +49,12 @@
                             <span class="burger-menu burger-line-3"></span>
                         </button>
                         <div class="banner-content">
-                            <h1 id="bannerTitle"></h1>
-                            <p id="bannerSubtitle"></p>
+                            <div class="content-flex">
+                                <h1 id="bannerTitle"></h1>
+                            </div>
+                            <div class="content-flex">
+                                <p id="bannerSubtitle"></p>
+                            </div>
                         </div>
                     </div>
                 </header>
@@ -59,7 +63,7 @@
                         <div class="project project-1">
                             <img src="images/Netmatters-Website.png" alt="An image of the Netmatters website">
                             <h2 class="mid-h2">Project One</h2>
-                            <a href="https://chris-tech-01.github.io/Netmatters-Webpage/?#" target="_blank" rel="noopener noreferrer">View Project<i class="fa-solid fa-arrow-right"></i></a>
+                            <a href="https://netmatters.christopher-foley.netmatters-scs.co.uk/" target="_blank" rel="noopener noreferrer">View Project<i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                         <div class="project project-2">
                             <img src="images/Netmatters-Website.png" alt="An image of the Netmatters website">
@@ -104,7 +108,7 @@
                         <form class="contact-box">
                             <div class="contact-row">
                                 <div class="search-bar-container">
-                                    <input class="search-bar" name="firstName" placeholder="First Name...." type="text" minlength="2" required>
+                                    <input class="search-bar" name="firstName" placeholder="First Name...." type="text" minlength="2" required> <!-- Required is a fallback validation for if JavaScript is not working -->
                                 </div>
                                 <div class="search-bar-container">
                                     <input class="search-bar" name="lastName" placeholder="Last Name...." type="text" minlength="2" required>

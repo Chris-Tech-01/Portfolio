@@ -67,6 +67,7 @@ header {
     @include color(electric-blue);
 
     h1 {
+        display: inline-block;
         font-size: 2.4rem;
         text-align: center;
         // @include color(neon-magneta-bs-inset, box-shadow)
@@ -78,6 +79,7 @@ header {
     }
 
     p {
+        display: inline-block;
         font-size: 1.8rem;
         // @include color(neon-magneta-bs-inset, box-shadow)
 
@@ -104,4 +106,9 @@ header {
     @include mq(m) {
         display: none;
     }
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
 }

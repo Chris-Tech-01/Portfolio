@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
   if (form) {
 
+    form.setAttribute('novalidate', '');
+
     form.addEventListener('submit', (event) => {
       event.preventDefault();
 

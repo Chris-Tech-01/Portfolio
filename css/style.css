@@ -108,6 +108,7 @@ header {
   color: #00F0FF;
 }
 .banner-content h1 {
+  display: inline-block;
   font-size: 2.4rem;
   text-align: center;
 }
@@ -116,6 +117,7 @@ header {
   color: #6E00FF;
 }
 .banner-content p {
+  display: inline-block;
   font-size: 1.8rem;
 }
 .banner-content p:hover {
@@ -138,6 +140,11 @@ header {
   .header-btn {
     display: none;
   }
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
 }
 
 #sidebar {
