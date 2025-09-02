@@ -1,12 +1,6 @@
 const sidebar = document.querySelector('#sidebar');
 const sidebarToggle = document.querySelector('#sidebarToggle');
 
-export function getRandomNumber() {
-    
-    const randomNumber = Math.floor(Math.random() * 6) + 1;
-    return randomNumber;
-}
-
 export function toggleSidebar() {
   
   if (!sidebar) {
